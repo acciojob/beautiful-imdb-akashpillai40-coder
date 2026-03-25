@@ -1,2 +1,74 @@
+.imdb-nav {
+  display: flex;
+  align-items: center; /* Vertically centers logo, search, and links */
+  background-color: #121212;
+  padding: 10px 20px;
+  gap: 20px; /* Space between the three main sections */
+}
 
-/* Your CSS Code here. */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0; /* Don't let the logo squish! */
+}
+
+.logo {
+  height: 32px; /* Fixed height for the brand */
+}
+
+/* THE SEARCH BAR: This needs to fill the empty space */
+.nav-search {
+  display: flex;
+  flex-grow: 1; /* This makes the search bar stretch to fill the middle */
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden; /* Keeps the input corners clean */
+  max-width: 800px; /* Prevents it from getting TOO wide on giant screens */
+}
+
+.nav-search input {
+  flex-grow: 1; /* Input takes all space inside the search box */
+  border: none;
+  padding: 8px 12px;
+  outline: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap; /* Prevents "Sign In" from breaking into two lines */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+.moviePic{
+	height:400px;
+	width:300px;
+	margin-top:10px;
+	opacity:0.9;
+	transition: opacity 0.2s;
+}
+.movie{
+	display:flex;
+	gap:10px;
+}
+.movie ::first-letter {
+	color:orangered;
+	font-size:40px;
+}
+.movieDetail{
+	position:static;
+	width:400px;
+	text-align:justify;
+	font-size:17px;
+}
